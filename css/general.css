@@ -1,0 +1,112 @@
+/* color palete
+#FFCB05
+#00A651
+#EC008C 
+#ED1C24
+#92278F
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Monoton&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Hindi', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 3.4rem;
+  row-gap: 9.6rem;
+}
+/* .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-family: Monoton;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 1px;
+  color: #ec008c;
+}
+.heading-primary {
+  text-transform: uppercase;
+  font-size: 5.2rem;
+  line-height: 1.1;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+  color: #fff;
+  background-color: #ec008c;
+}
+
+.btn--form {
+  background-color: #92278f;
+  color: #fdf2e9;
+  padding: 2rem;
+  align-self: end;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #ec008e83;
+}
+.center-text {
+  text-align: center;
+}
+strong {
+  font-weight: 500;
+}
+aside {
+  margin: 2rem;
+}

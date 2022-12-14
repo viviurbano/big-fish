@@ -1,0 +1,307 @@
+/* color palete
+#EC008C 
+#ED1C24
+#92278F
+#FFCB05
+#00A651
+*/
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a651;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+.logo {
+  height: 4.2rem;
+}
+/* NAVIGATION */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ffcb05;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #ec008c;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #ffcb05;
+}
+/* HERO SECTION */
+.section-hero {
+  background-color: #ffcb05;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin: 4.8rem 0;
+}
+.hero-img {
+  width: 85%;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+.section-how {
+  padding: 9.6rem 0;
+}
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-img {
+  width: 25%;
+}
+.section-musics {
+  padding: 9.6rem 0;
+  background-color: #ffcb05;
+}
+.card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  background-image: linear-gradient(
+    to right bottom,
+    #4d3d02,
+    #665102,
+    #806603,
+    #997a03,
+    #b38e04,
+    #cca204,
+    #e6b705,
+    #ffcb05
+  );
+}
+.card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.card audio {
+  width: 100%;
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+.card-img {
+  width: 100%;
+  height: 45em;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.pricing-ticket {
+  border-radius: 11px;
+  width: 1fr;
+}
+.pricing-ticket--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+.pricing-ticket--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.ticket-name {
+  color: #92278f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.ticket-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.ticket-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.ticket-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+.ticket-buy {
+  text-align: center;
+  margin-top: 3.8rem;
+}
+.ticket-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+  background-color: #ffcb05;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(
+    to right bottom,
+    #4d3d02,
+    #665102,
+    #806603,
+    #997a03,
+    #b38e04,
+    #cca204,
+    #e6b705,
+    #ffcb05
+  );
+  overflow: hidden;
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: whitesmoke;
+}
+.cta .heading-secondary {
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(243, 233, 45, 0.35),
+      rgba(27, 175, 4, 0.35)
+    ),
+    url('../img/brasilcoms_0199.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form textarea {
+  border: none;
+  width: 100%;
+  height: 15rem;
+  padding: 1.3rem;
+  font-size: 1.3rem;
+  font-family: inherit;
+  color: inherit;
+  background-color: #fdf2e9;
+  border-radius: 0.6em;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: #333;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: rebeccapurple;
+}
+
+/* FOOTER */
+.footer {
+  padding: 5rem 0;
+  background-color: #b38e04;
+}
+.grid--footer {
+  grid-template-columns: 1fr 1fr;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.4rem;
+}
